@@ -14,7 +14,9 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: .
+    image: 'yasminelayes/achatrepo:yass'
+    build:
+      context: .
 
     restart: on-failure
     ports:
